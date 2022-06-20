@@ -4,6 +4,7 @@ body{
     height: 100%;
     background-size:cover;
     background-repeat: no-repeat;
+    background-color: white;
 }
 
 
@@ -78,10 +79,10 @@ nav ul ul{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 400px;
+  max-width: 300px;
   position: relative;
   margin-top: 450px;
-  margin-left: 70px;
+  margin-left: 110px;
 }
 
 /* Hide the images by default */
@@ -91,7 +92,7 @@ nav ul ul{
 
 /* Next & previous buttons */
 .prevnext{
-    margin-left: -130px;
+    margin: auto;
 }
 
 .prev, .next {
@@ -101,7 +102,7 @@ nav ul ul{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  margin-left: 100px;
+  margin-left: -20px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -112,7 +113,7 @@ nav ul ul{
 
 /* Position the "next button" to the right */
 .next {
-  right: 70px;
+  right: -20px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -165,6 +166,7 @@ nav ul ul{
 
 .linkterkait{
     margin-top: -250px;
+    padding-left: 0;
 }
 
 
@@ -334,22 +336,24 @@ float: right;
     }
 
     .fiturlogin{
-        margin-top: 0px;
-        margin-left: 70px;
+        margin: auto;
+        margin-right: 40px;
+        margin-bottom: -350px;
     }
 
     .slideshow-container{
-        margin-left: 7px;
-        width: 1000px;
+        margin: auto;
+        margin-top: 470px;
+        width: auto;
     }
 
     .momdot{
-        margin-left: 95px;
+        margin: auto;
     }
 
     .fiturlogin li{
         display: block;
-        width: 150px;
+        width: auto;
         height: 60px;
         padding-top: 0px !important;
         margin-top: 0px;
