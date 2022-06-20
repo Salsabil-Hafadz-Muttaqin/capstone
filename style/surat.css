@@ -1,0 +1,29 @@
+div.isi img{
+    margin-top: 100px;
+    margin-left: 640px;
+    margin-bottom: 30px;
+    height: 150px;
+}
+div.isi{
+    margin-top: 10px;
+}
+div.isi ul{
+    margin-left: 480px;
+    padding-left: 5px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(44, 61, 79, 0.8);
+    width: 430px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+div.isi ul:hover{
+    background-color: rgba(255, 109, 27, 1)
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

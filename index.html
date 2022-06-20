@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDEPAN</title>
+
+    <!-- <link rel="stylesheet" href="js/bootstrap.min.js"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="js/function.js">
+
+
+</head>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<body style="background-image:url(img/background\ beranda.png)">
+    <nav>
+        <input type="checkbox" id="nav-button">
+        <label for="nav-button">&#9776</label>
+
+        <div class="logo">
+            <img src="img/bitmap.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="#">Pemerintah</a></li>
+            <li><a href="#">Infografis</a></li>
+            <li><a href="#">Berita</a></li>
+            <li><a href="pelayanan.html">Layanan</a></li>
+        </ul>
+    </nav>
+
+<div class="isi">
+  <ul class="selamat">
+    <li>SELAMAT DATANG DI</li>
+    <li>WEBSITE PELAYANAN MASYARAKAT</li>
+    <li>DESA PENAMBANGAN</li>
+  </ul>
+  <ul class="linkterkait">
+            <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade" style="display:block;">
+        <a href="https://bondowosokab.go.id/">
+          <img src="img/beranda1.png" style="width:300px" height="130px">
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://sepakat.bappenas.go.id/dmd/">
+          <img src="img/beranda2.png" style="width: 300px;" height="130px">
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://said.bondowosokab.go.id/auth/login">
+          <img src="img/beranda3.png" style="width: 300px;" height="130px">
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="http://penambangan.desa.id/spasi">
+          <img src="img/beranda4.png" style="width: 300px;" height="130px">
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://desa.bondowosokab.go.id/">
+          <img src="img/beranda5.png" style="width: 300px;" height="130px">
+        </a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://ppid.bondowosokab.go.id/">
+          <img src="img/beranda6.png" style="width: 300px;" height="130px">
+        </a>
+      </div>
+
+
+      <div class="prevnext">
+      <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="momdot">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+  </ul>
+
+</div>
+
+</body>
+</html>
